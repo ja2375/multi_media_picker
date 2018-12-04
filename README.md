@@ -6,7 +6,7 @@ Please note that this is still under development and therefore only Android is s
 
 ## Installation
 
-First, add `image_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
+First, add `multi_media_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 ### iOS
 
