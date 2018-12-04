@@ -10,6 +10,8 @@ First, add `multi_media_picker` as a [dependency in your pubspec.yaml file](http
 
 ### iOS
 
+**NOT YET SUPPORTED**
+
 Add the following keys to your _Info.plist_ file, located in `<project root>/ios/Runner/Info.plist`:
 
 * `NSPhotoLibraryUsageDescription` - describe why your app needs permission for the photo library. This is called _Privacy - Photo Library Usage Description_ in the visual editor.
@@ -34,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<File> _images;
 
   Future getImage() async {
-    var images = await MultiMediaPicker.pickImage(sources: ImageSource.camera);
+    var images = await MultiMediaPicker.pickImages(sources: ImageSource.camera);
 
     setState(() {
       _images = images;
