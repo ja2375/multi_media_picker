@@ -42,7 +42,6 @@ class _MyHomePageState extends State<MyHomePage> {
     var imgs;
     if(!isVideo){
       imgs = await MultiMediaPicker.pickImages(source: source, singleImage: singleImage);
-      print((imgs[0] as File).path);
     }
     setState(() {
       if (_controller != null) {
