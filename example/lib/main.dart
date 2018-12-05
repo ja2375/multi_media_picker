@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
       );
     } else if (controller.value.initialized) {
       return Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(10.0),
         child: AspectRatioVideo(controller),
       );
     } else {
@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  Widget _previewImage() {
+  Widget _previewImages() {
     if(_imgs == null){
       return Text('No images selected.');
     } else {
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: isVideo ? _previewVideo(_controller) : _previewImage(),
+        child: isVideo ? _previewVideo(_controller) : _previewImages(),
       ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -144,14 +144,14 @@ class _MyHomePageState extends State<MyHomePage> {
           FloatingActionButton(
             onPressed: () {
               isVideo = false;
-              _onImageButtonPressed(ImageSource.gallery);
+              _onImageButtonPressed(ImageSource.gallery, singleImage: true);
             },
             heroTag: 'image0',
             tooltip: 'Pick Image from gallery',
-            child: const Icon(Icons.photo_library),
+            child: Icon(Icons.photo_library),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 16.0),
+            padding: EdgeInsets.only(top: 16.0),
             child: FloatingActionButton(
               onPressed: () {
                 isVideo = false;
@@ -159,11 +159,11 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               heroTag: 'image1',
               tooltip: 'Pick Images from gallery',
-              child: const Icon(Icons.photo_album),
+              child: Icon(Icons.photo_album),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 16.0),
+            padding: EdgeInsets.only(top: 16.0),
             child: FloatingActionButton(
               onPressed: () {
                 isVideo = false;
@@ -175,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 16.0),
+            padding: EdgeInsets.only(top: 16.0),
             child: FloatingActionButton(
               backgroundColor: Colors.red,
               onPressed: () {
@@ -184,7 +184,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               heroTag: 'video0',
               tooltip: 'Pick Video from gallery',
-              child: const Icon(Icons.video_library),
+              child: Icon(Icons.video_library),
             ),
           ),
           Padding(
@@ -197,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               heroTag: 'video1',
               tooltip: 'Take a Video',
-              child: const Icon(Icons.videocam),
+              child: Icon(Icons.videocam),
             ),
           ),
         ],
