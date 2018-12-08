@@ -1,6 +1,10 @@
+## 0.1.1
+
+* Update README
+
 ## 0.1.0
 
-* Added support for iOS
+* Added support for iOS (only 1 image can be picked)
 
 ## 0.0.2
 
