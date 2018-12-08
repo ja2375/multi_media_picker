@@ -1,6 +1,10 @@
+## 0.1.1
+
+* Update README with important notes
+
 ## 0.1.0
 
-* Added support for iOS
+* Added support for iOS (not yet fully implemented)
 
 ## 0.0.2
 
