@@ -2,7 +2,7 @@
 
 A fork of the official image_picker plugin that adds the functionality to pick multiple images.
 
-NOTE: As of now, it is not possible to pick more than 1 image on iOS. Android is fully supported.
+Both Android and iOS are now supported!
 
 ## Installation
 
@@ -10,12 +10,10 @@ In your `pubspec.yaml` file within your Flutter Project:
 
 ```yaml
 dependencies:
-  multi_media_picker: ^0.1.1
+  multi_media_picker: ^0.1.0
 ```
 
 ### iOS
-
-**NOT FULLY SUPPORTED YET**
 
 Add the following keys to your _Info.plist_ file, located in `<project root>/ios/Runner/Info.plist`:
 
