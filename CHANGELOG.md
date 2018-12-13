@@ -1,3 +1,7 @@
+## 0.1.2
+
+* Removed image_picker from images name on iOS
+
 ## 0.1.1
 
 * Update README with important notes

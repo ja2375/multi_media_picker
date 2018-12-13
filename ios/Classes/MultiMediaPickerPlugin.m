@@ -155,7 +155,7 @@ static const int SOURCE_GALLERY = 1;
 
     NSData *data = UIImageJPEGRepresentation(image, 1.0);
     NSString *guid = [[NSProcessInfo processInfo] globallyUniqueString];
-    NSString *tmpFile = [NSString stringWithFormat:@"image_picker_%@.jpg", guid];
+    NSString *tmpFile = [NSString stringWithFormat:@"%@.jpg", guid];
     NSString *tmpDirectory = NSTemporaryDirectory();
     NSString *tmpPath = [tmpDirectory stringByAppendingPathComponent:tmpFile];
 
