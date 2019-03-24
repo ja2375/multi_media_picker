@@ -1,3 +1,7 @@
+## 0.2.0
+
+* BREAKING CHANGE: Updated plugin to work with AndroidX.
+
 ## 0.1.2
 
 * Removed image_picker from images name on iOS
