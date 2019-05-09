@@ -1,3 +1,7 @@
+## 0.2.1
+
+* Update video dependency
+
 ## 0.2.0
 
 * BREAKING CHANGE: Updated plugin to work with AndroidX.
