@@ -1,6 +1,6 @@
 name: multi_media_picker
 description: A fork of the official image_picker plugin that adds the functionality to pick multiple images.
-version: 0.2.0
+version: 0.2.1
 author: Javi Hurtado <webmaster@javi-h.com>
 homepage: https://github.com/ja2375/multi_media_picker
 
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  video_player: ^0.7.2
+  video_player: ">= 0.10.0 <0.11.0"
 
 flutter:
   plugin:
