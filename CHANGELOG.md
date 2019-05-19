@@ -1,6 +1,7 @@
-## 0.2.2
+## 0.2.2-3
 
 * Update gradle
+* Update readme
 
 ## 0.2.1
 
