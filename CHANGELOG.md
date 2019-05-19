@@ -1,3 +1,7 @@
+## 0.2.2
+
+* Update gradle
+
 ## 0.2.1
 
 * Update video dependency

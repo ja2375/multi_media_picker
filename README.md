@@ -10,7 +10,7 @@ In your `pubspec.yaml` file within your Flutter Project:
 
 ```yaml
 dependencies:
-  multi_media_picker: ^0.2.1
+  multi_media_picker: ^0.2.2
 ```
 
 ### iOS
