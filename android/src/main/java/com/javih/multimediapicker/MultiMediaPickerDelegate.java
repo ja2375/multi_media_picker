@@ -6,8 +6,10 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.os.Looper;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
+import android.os.Handler;
 import android.provider.MediaStore;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
@@ -451,8 +453,14 @@ public class MultiMediaPickerDelegate
                     pendingCameraMediaUri,
                     new OnPathReadyListener() {
                         @Override
-                        public void onPathReady(String path) {
-                            handleImageResult(path);
+                        public void onPathReady(final String path) {
+                            // handleImageResult(path);
+                            new Handler(Looper.getMainLooper()).post(new Runnable() {
+                              @Override
+                              public void run() {
+                                handleImageResult(path);
+                              }
+                            });
                         }
                     });
             return;
@@ -468,8 +476,14 @@ public class MultiMediaPickerDelegate
                     pendingCameraMediaUri,
                     new OnPathReadyListener() {
                         @Override
-                        public void onPathReady(String path) {
-                            handleVideoResult(path);
+                        public void onPathReady(final String path) {
+                            // handleVideoResult(path);
+                            new Handler(Looper.getMainLooper()).post(new Runnable() {
+                              @Override
+                              public void run() {
+                                handleVideoResult(path);
+                              }
+                            });
                         }
                     });
             return;
